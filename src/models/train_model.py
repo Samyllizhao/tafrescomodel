@@ -28,7 +28,7 @@ def load_datasets():
     print("Carregando datasets...")
     train_ds = tf.keras.utils.image_dataset_from_directory(
         str(DATA_DIR / "train"),
-        shuffle=True,
+        shuffle=True, 
         image_size=IMG_SIZE,
         batch_size=BATCH_SIZE,
     )
